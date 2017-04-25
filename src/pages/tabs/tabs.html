@@ -1,0 +1,6 @@
+<ion-tabs [color]="color">
+  <ion-tab [root]="tab1Root" tabTitle="Home" tabIcon="home"></ion-tab>
+  <!--tab1Root doesn't have ionSelect function shows color of tabs background will not change when active which it will follow the previous color or default color, which is "primary"-->
+  <ion-tab [root]="tab2Root" tabTitle="About" tabIcon="information-circle" (ionSelect)="selectInformation()"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Contact" tabIcon="contacts" (ionSelect)="selectContact()"></ion-tab>
+</ion-tabs>
